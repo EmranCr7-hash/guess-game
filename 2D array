@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+//2d array
+// creat a function called hightestrunscorer that will
+//receive a 2d array called playerinfo
+// based on hightest score,return the name of the player
+
+    function hightestrunscorer(playyersinfo){
+// console.log(playerinfo); array er moddhe call holo kina seta check korlam
+  var hightestscorer = playerinfo [0] [0];
+  var hightestscorer = playerinfo [0] [1];
+
+  for (var x = 1; x<playerinfo.length; x++){
+    if(hightestscorer < playerinfo[x] [1]){
+      hightestscorer=playerinfo[x] [1];
+      hightestscorer=playerinfo[x] [0];
+    }
+  } 
+  return hightestscorer;
+    }
+    //2d array recieve korte ekta 2d array toiri korte hbe
+     var playerinfo = [
+      ["Ashraful",95],
+      ["Mizan",25],
+      ["Rakib",45],
+      ["lu",105],
+
+     ];
+    var name= hightestrunscorer(playerinfo);// function call korlam
+    console.log(name);
+</script>
+   
+</body>
+</html>
+
+   
+</script>
+   
+</body>
+</html>
